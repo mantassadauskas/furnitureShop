@@ -1,0 +1,61 @@
+.mobile-logo {
+  display: none;
+}
+
+.wrapper {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin: 50px auto 70px auto;
+
+  .logo {
+    display: inline-block;
+  }
+
+  .form-group {
+    display: inline-block;
+    margin: 0;
+
+    &-control {
+      width: auto;
+      display: inline-block;
+    }
+  }
+  .orders {
+    cursor: pointer;
+    display: inline-block;
+    width: 200px;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .wrapper {
+    margin-top: 20px;
+
+    .logo {
+      display: none;
+    }
+  }
+
+  .mobile-logo {
+    display: block;
+    margin-top: 30px;
+
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+}

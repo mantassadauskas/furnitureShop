@@ -1,0 +1,15 @@
+<div class="filters-container">
+  <ng-container *ngIf="filters">
+    <div *ngFor="let property of propertiesArray">
+      <form [formGroup]="filters">
+        <h4 class="filter-label">{{property[0]}}</h4>
+        <div class="btn-group-toggle">
+          <label class="btn" ngbButtonLabel *ngFor="let value of property[1]">
+            <input type="checkbox" formControlName="{{property[0]}}" ngbButton
+                   (click)="filterClicked(property[0], value)">{{value}}
+          </label>
+        </div>
+      </form>
+    </div>
+  </ng-container>
+</div>

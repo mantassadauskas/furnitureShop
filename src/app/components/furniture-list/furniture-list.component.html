@@ -1,0 +1,19 @@
+<div class="furniture-list-container">
+  <div class="grid-container">
+    <ul *ngFor="let furniture of pagedFurnitureList" class="furniture">
+      <div class="btn btn-success instant-order" (click)="makeOrder(furniture)">Order</div>
+      <li class="image furniture-image-{{furniture.size}}-{{furniture.color}}"></li>
+      <li class="furniture-name">{{furniture.name}}</li>
+      <div class="furniture-properties">
+        <li class="furniture-properties">color:<span>{{furniture.color}}</span></li>
+        <li class="furniture-properties">material:<span>{{furniture.material}}</span></li>
+        <li class="furniture-properties">price:<span>{{furniture.price}} €</span></li>
+        <div class="extra-properties">
+          <li class="furniture-properties">length:<span>{{furniture.length}}</span></li>
+          <li class="furniture-properties">width:<span>{{furniture.width}}</span></li>
+        </div>
+      </div>
+    </ul>
+  </div>
+</div>
+
