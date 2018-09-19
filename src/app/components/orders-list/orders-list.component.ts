@@ -16,7 +16,6 @@ export class OrdersListComponent implements OnInit, OnDestroy {
   page: number = 1;
   ordersList: IOrder[];
   pagedOrdersList: IOrder[];
-  itemsCount: number;
   subscription: Subscription;
   subscription2: Subscription;
 

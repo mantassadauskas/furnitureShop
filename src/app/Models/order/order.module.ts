@@ -8,11 +8,11 @@ import {CommonModule} from '@angular/common';
   declarations: []
 })
 export class OrderModule {
-  date: number;
+  date: String;
   item: JSON;
 
   constructor(furniture) {
-    this.date = Date.now();
+    this.date = (new Date(Date.now())).toLocaleString();
     this.item = furniture;
   }
 }

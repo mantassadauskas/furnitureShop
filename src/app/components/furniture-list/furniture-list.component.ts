@@ -12,7 +12,6 @@ import {Subscription} from "rxjs/index";
   styleUrls: ['./furniture-list.component.scss']
 })
 export class FurnitureListComponent implements OnInit, OnDestroy {
-  furnitureList: IFurniture[];
   pagedFurnitureList: IFurniture[];
   subscription: Subscription;
 

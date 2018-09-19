@@ -15,7 +15,7 @@ export class ApiService {
 
   constructor(public api: HttpClient) {
     // this.host = 'https://furniture-shop-heroku-api.herokuapp.com';
-    this.host = 'http://localhost:3000';
+    this.host = "http://localhost:3000"
   }
 
   getFurnitureList(url) {
